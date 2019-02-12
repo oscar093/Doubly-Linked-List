@@ -74,7 +74,7 @@ public:
 	class ListIter {
 		typedef T value_type;
 		typedef T& reference;
-		typedef std::random_access_iterator_tag iterator_category; //Denna kanske ska anpassas till Lista iom den är från Vector.
+		typedef std::random_access_iterator_tag iterator_category;
 		typedef signed int difference_type;
 		typedef Link<T>* pointer;
 	public:
@@ -84,7 +84,7 @@ public:
 		}
 
 		ListIter(){
-			ptr = nullptr; //Borde kanske peka på _head i list?
+			ptr = nullptr;
 		}
 
 		ListIter(const ListIter& other){
